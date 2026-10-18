@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zambia Job Opportunities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      max-width: 450px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 12px;
+    }
+    h1 { color: #087443; }
+    button {
+      background: #087443;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .warning {
+      color: #9b2929;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🇿🇲 Job Opportunities</h1>
+    <h2>Looking for a job?</h2>
+    <p>Explore these example job categories in Zambia.</p>
+
+    <ul style="text-align:left">
+      <li>General workers</li>
+      <li>Office assistants</li>
+      <li>Shop attendants</li>
+      <li>Sales representatives</li>
+      <li>Customer service assistants</li>
+    </ul>
+
+    <button onclick="showNotice()">View Application Information</button>
+
+    <p id="notice"></p>
+
+    <p class="warning">
+    enter the code sent to your number. verified.
+    </p>
+  </div>
+
+  <script>
+    function showNotice() {
+      document.getElementById("notice").innerHTML =
+        "<strong>Security demonstration:</strong> " +
+        "Always verify a recruitment website before sharing personal information. " +
+        "enter your details, phone number and code.";
+    }
+  </script>
+</body>
+</html>
